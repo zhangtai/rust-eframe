@@ -1,5 +1,22 @@
 ## USB IT8951 epaper driver Rust
 
+## New instructions
+
+### System
+
+```shell
+sudo sh -c "echo 'SUBSYSTEM==\"usb\", ATTRS{idVendor}==\"048d\", MODE=\"0666\"' > /etc/udev/rules.d/60-it8951.rules"
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+
+### Build
+
+```shell
+cargo build --release
+```
+
+## Originals
+
 Waveshare sells a [range of epaper
 displays](https://www.waveshare.com/product/displays/e-paper/epaper-1.htm),
 some of which ship with a IT8951 display HAT. This IT8951 can be controlled via
