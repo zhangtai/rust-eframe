@@ -44,7 +44,7 @@ fn main() -> anyhow::Result<()> {
     println!("FY: {}", final_image.height());
 
     let px: u32 = (dwidth-final_image.width()) / 2;
-    let py: u32 = (dheight-final_image.height()) / 2;
+    let py: u32 = (dheight-final_image.height()) / 2 - 14;
 
     println!("PX: {}", px);
     println!("PY: {}", py);
