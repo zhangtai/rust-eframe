@@ -22,7 +22,7 @@ fn main() -> anyhow::Result<()> {
 
     let dwidth: u32 = display.width;
     let dheight: u32 = display.height;
-    let swidth: u32 = 40;  // Shrink W
+    let swidth: u32 = 60;  // Shrink W
     let sheight: u32 = 40;  // Shrink H
 
     println!("Display data");
@@ -43,8 +43,8 @@ fn main() -> anyhow::Result<()> {
     println!("FX: {}", final_image.width());
     println!("FY: {}", final_image.height());
 
-    let px: u32 = ((dwidth-final_image.width()) / 2) + (swidth / 2);
-    let py: u32 = ((dheight-final_image.height()) / 2) + (sheight / 2);
+    let px: u32 = (dwidth-final_image.width()) / 2;
+    let py: u32 = (dheight-final_image.height()) / 2;
 
     println!("PX: {}", px);
     println!("PY: {}", py);
