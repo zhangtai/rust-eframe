@@ -13,6 +13,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 
 ```shell
 cargo build --release
+sudo cp target/release/eframe /usr/local/bin
 ```
 
 ## Originals
