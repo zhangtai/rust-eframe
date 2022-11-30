@@ -38,7 +38,7 @@ fn main() -> anyhow::Result<()> {
     let final_image = flipped_grayscale.resize(dwidth - swidth, dheight - sheight, image::imageops::FilterType::Nearest);
 
     it8951.update_region(&cavas, 0, 0, Mode::INIT)?;
-    thread::sleep(Duration::from_millis(500));
+    thread::sleep(Duration::from_millis(1500));
 
     println!("FX: {}", final_image.width());
     println!("FY: {}", final_image.height());
