@@ -12,3 +12,4 @@ serde = { version = "1", features = ["derive"]}
 rusb = "0.9"
 image = "0.23"
 anyhow = "1"
+clap = { version = "4.0.29", features = ["derive"] }
