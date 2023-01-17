@@ -16,6 +16,14 @@ cargo build --release
 sudo cp target/release/eframe /usr/local/bin
 ```
 
+### Take screenshot from web
+
+```shell
+npm config set prefix '~/.local/'
+npm install --global pageres-cli
+pageres https://worldcup.cole.ws/ --delay=15 624x800 --scale=3 --selector='#groups'
+```
+
 ## Originals
 
 Waveshare sells a [range of epaper
