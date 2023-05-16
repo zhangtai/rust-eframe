@@ -16,6 +16,12 @@ cargo build --release
 sudo cp target/release/eframe /usr/local/bin
 ```
 
+### Usage
+
+```shell
+eframe kitten.jpg fill
+```
+
 ### Take screenshot from web
 
 ```shell
@@ -23,6 +29,13 @@ npm config set prefix '~/.local/'
 npm install --global pageres-cli
 pageres https://worldcup.cole.ws/ --delay=15 624x800 --scale=3 --selector='#groups'
 ```
+
+### Troubleshooting
+
+#### Cannot open it8951
+
+I have this issue on Fedora 38 Server, I ran `dmesg` as per [this guide](https://docs.fedoraproject.org/en-US/fedora/f28/install-guide/install/Troubleshooting/), remove USB, and plug back. It works, don't know the root cause.
+
 
 ## Originals
 
