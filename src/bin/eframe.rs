@@ -23,7 +23,7 @@ fn main() -> anyhow::Result<()> {
     print_display_info(inquiry, display_info);
 
     let dimention = DisplayDimention(display_info.width, display_info.height);
-    let shrinks = DisplayShrinks(56, 34);
+    let shrinks = DisplayShrinks(64, 34);
     let dwidth: u32 = display_info.width;
     let dheight: u32 = display_info.height;
     let clear_display = true;
@@ -41,8 +41,8 @@ fn main() -> anyhow::Result<()> {
     let img_from_file = image::open(args.file)?;
     let img = convert_image(img_from_file, dimention, shrinks, args.resize);
 
-    let px: u32 = (dwidth-img.width()) / 2 + 2;
-    let py: u32 = (dheight-img.height()) / 2 - 13;
+    let px: u32 = (dwidth-img.width()) / 2;
+    let py: u32 = (dheight-img.height()) / 2 - 8;
     
     // println!("FX: {}", img.width());
     // println!("FY: {}", img.height());
